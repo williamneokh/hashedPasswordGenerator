@@ -2,4 +2,7 @@
 
 A simple password hash generator using bcrypt package
 
-Do import "golang.org/x/crypto/bcrypt"
+Package installation:
+1) go get golang.org/x/crypto/bcrypt
+
+2) add import "golang.org/x/crypto/bcrypt"

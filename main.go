@@ -1,8 +1,15 @@
 package main
 
-func main(){
+import (
+	"fmt"
 
-	password := "" // enter your prefer password here
+	"golang.org/x/crypto/bcrypt"
+)
 
-	hashedPassword, _ := 
+func main() {
+
+	password := "abc" // enter your prefer password here
+
+	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(password), 12)
+	fmt.Println(string(hashedPassword))
 }
